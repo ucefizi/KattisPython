@@ -1,3 +1,4 @@
+# So many conditions!! O_O
 x = input()
 while x != '0 0 0 0':
 	tab = x.split()
