@@ -1,14 +1,8 @@
-st = input()
-tab = list(st)
-x = ''
-y = 0
-for i in range(len(tab)):
-	if tab[i] not in st[:i]+st[i+1:]:
-		x = tab[i]
-		tab.remove(x)
-		st = ''.join(tab)
-		break
-for i in range(len(tab)):
-	if tab[i] not in st[:i]+st[i+1:]:
-		y += 1
-print(y)
+chars = [chr(i) for i in range(97, 123)]
+st = list(input())
+tab = [st.count(i) for i in chars]
+x = 0
+for i in tab:
+	if i%2 != 0: x += 1
+if x == 0: print(x)
+else: print(x - 1)
