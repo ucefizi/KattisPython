@@ -1,5 +1,4 @@
 tab = [int(i) for i in input().split()]
-tb = [2**i for i in range(tab[1] + 1)]
-x = sum(tb)
+x = sum([2**i for i in range(tab[1] + 1)])
 if tab[0] <= x: print('yes')
 else: print('no')
