@@ -1,3 +1,5 @@
+# Problem statement: https://open.kattis.com/problems/statistics
+
 st = input()
 i = 1
 while st != '':
@@ -5,5 +7,7 @@ while st != '':
 	tab = tab[1:]
 	print('Case {}: {} {} {}'.format(i, min(tab), max(tab), max(tab)-min(tab)))
 	i += 1
-	try: st = input()
-	except: st = ''
+	try:
+		st = input()
+	except IOError:
+		st = ''

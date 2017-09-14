@@ -1,4 +1,4 @@
-# Problem statement: https://open.kattis.com/problems/armystrengtheasy
+# Problem statement: https://open.kattis.com/problems/armystrengthhard
 
 for i in range(int(input())):
 	input()

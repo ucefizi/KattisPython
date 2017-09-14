@@ -1,7 +1,10 @@
+# Problem statement: https://open.kattis.com/problems/sequence
+
 def bd(n):
 	x = 2
 	while x*x <= n:
-		if n%x == 0: return int(n/x)
+		if n%x == 0:
+			return int(n/x)
 		x += 1
 	return 1
 

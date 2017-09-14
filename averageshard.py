@@ -1,5 +1,6 @@
-t = int(input())
-for i in range(t):
+# Problem statement: https://open.kattis.com/problems/averageshard
+
+for i in range(int(input())):
 	input()
 	x = [int(j) for j in input().split()]
 	t1 = [int(j) for j in input().split()]
@@ -8,5 +9,6 @@ for i in range(t):
 	m2 = sum(t2)/len(t2)
 	nb = 0
 	for j in t1:
-		if j < m1 and j > m2: nb += 1
+		if j < m1 and j > m2:
+			nb += 1
 	print(nb)

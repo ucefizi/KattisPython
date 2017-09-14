@@ -1,6 +1,13 @@
+# Problem statement: https://open.kattis.com/problems/fizzbuzz
+
 tab = [int(i) for i in input().split()]
-for i in range(1, tab[2]+1) :
-	if i%tab[0] == 0 and i%tab[1]==0 : print('FizzBuzz')
-	elif i%tab[0] == 0 : print('Fizz')
-	elif i%tab[1] == 0 : print('Buzz')
-	else : print(i)
+for i in range(1, tab[2]+1):
+	st = ''
+	if i%tab[0] == 0:
+		st += 'Fizz'
+	if i%tab[1] == 0:
+		st += 'Buzz'
+	if st:
+		print(st)
+	else:
+		print(i)

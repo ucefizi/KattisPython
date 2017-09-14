@@ -1,3 +1,5 @@
+# Problem statement: https://open.kattis.com/problems/subseqhard
+
 for i in range(int(input())):
 	input()
 	n = int(input())
@@ -8,7 +10,9 @@ for i in range(int(input())):
 	dic[0] = 1
 	for j in tab:
 		s += j
-		if (s-47) in dic: c += dic[s-47]
-		if s in dic: dic[s] += 1
+		if s - 47 in dic:
+			c += dic[s-47]
+		if s in dic:
+			dic[s] += 1
 		else: dic[s] = 1
 	print(c)
