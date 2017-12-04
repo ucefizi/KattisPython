@@ -9,5 +9,5 @@ while st != '':
 	i += 1
 	try:
 		st = input()
-	except IOError:
+	except EOFError:
 		st = ''
